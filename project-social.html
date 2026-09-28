@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Ecosystems & Infographics Case Study | Michael Jay Juan</title>
+    <meta name="author" content="Michael Jay Juan">
+    <meta name="keywords" content="marketing operations, gohighlevel expert, automation specialist, video editing, funnel building, Michael Jay Juan, marketing agency">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#e11d48',
+                        dark: '#0a0a0a',
+                        card: '#121212',
+                        border: '#262626'
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #050505; color: white; font-family: system-ui, -apple-system, sans-serif; }
+        .glass-card { background: rgba(30, 33, 43, 0.4); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        :root { --ease-premium: cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s var(--ease-premium), transform 1s var(--ease-premium);
+            will-change: opacity, transform;
+        }
+        .reveal-on-scroll.is-revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+        /* AMBIENT ANIMATED BACKGROUND */
+        .ambient-orb { position: absolute; border-radius: 50%; filter: blur(120px); z-index: 0; pointer-events: none; opacity: 0.6; animation-duration: 20s; animation-iteration-count: infinite; animation-direction: alternate; animation-timing-function: ease-in-out; }
+        .orb-1 { width: 600px; height: 600px; background: rgba(225,29,72,0.15); top: -10%; right: -10%; animation-name: drift1; }
+        .orb-2 { width: 700px; height: 700px; background: rgba(159,18,57,0.12); bottom: -20%; left: -10%; animation-name: drift2; }
+        .orb-3 { width: 500px; height: 500px; background: rgba(225,29,72,0.1); top: 30%; left: 40%; animation-name: drift3; }
+        @keyframes drift1 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(-100px, 150px) scale(1.2); } }
+        @keyframes drift2 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(200px, -100px) scale(1.1); } }
+        @keyframes drift3 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(-150px, -200px) scale(1.3); } }
+
+</style>
+    <script>tailwind.config={theme:{extend:{colors:{brand:'#e11d48',dark:'#050505',card:'#121212',border:'#262626'}}}}</script>
+
+    <!-- SEO & OPEN GRAPH -->
+    <meta name="description" content="I turn chaos into high-converting marketing engines. From GoHighLevel automations to digital design, see how I help agencies scale.">
+    <meta property="og:title" content="Michael Jay Juan | Marketing Operations Specialist">
+    <meta property="og:description" content="I turn chaos into high-converting marketing engines. From GoHighLevel automations to digital design, see how I help agencies scale.">
+    <meta property="og:image" content="https://michaeljayjuan.com/my_logo.png">
+    <meta property="og:url" content="https://michaeljayjuan.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="my_logo.png">
+    <link rel="apple-touch-icon" href="my_logo.png">
+
+
+    <!-- AI SCHEMA MARKUP -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Jay Juan",
+    "jobTitle": "Marketing Operations Specialist",
+    "url": "https://michaeljayjuan.com",
+    "description": "Expert in GoHighLevel automations, funnel building, and digital marketing operations."
+}
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-97PHMZ331C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-97PHMZ331C');
+    </script>
+</head>
+<body class="antialiased min-h-screen relative overflow-x-hidden">
+
+    <!-- Animated Background -->
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+
+
+    <!-- GLOBAL NAVIGATION -->
+    <nav class="fixed w-full top-0 z-50 bg-[#050505]/90 backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="rounded-xl p-[2px] bg-gradient-to-br from-red-500 via-rose-700 to-[#050505] shadow-[0_0_15px_rgba(225,29,72,0.5)] block hover:scale-105 transition">
+                    <img src="my_logo.png?v=3" alt="Michael Jay Logo" class="h-10 w-10 bg-[#050505] rounded-xl object-contain">
+                </a>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="index.html#home" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">Home</a>
+                <a href="index.html#about" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">About</a>
+                <a href="index.html#services" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">Services</a>
+                <a href="index.html#work" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">Projects</a>
+            </div>
+            <a href="index.html#contact" class="hidden md:inline-flex items-center gap-2 bg-brand hover:bg-rose-700 text-white shadow-[0_0_15px_rgba(225,29,72,0.4)] hover:shadow-[0_0_25px_rgba(225,29,72,0.7)] px-5 py-2.5 text-sm font-medium uppercase tracking-wider rounded transition">
+                Book a Call <i data-feather="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </nav>
+
+    
+    <!-- Ambient Background Glows -->
+    
+    
+
+    <main class="max-w-7xl mx-auto px-6 pt-32 pb-24 relative z-10">
+        
+        
+
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32 reveal-on-scroll is-revealed">
+            <div>
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-[#0a0a0a] border border-gray-800 text-gray-300 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span> Content Design
+                </div>
+                <h1 class="text-5xl md:text-6xl font-medium mb-6 tracking-tight leading-tight text-white">
+                    Social Media<br><span class="font-medium text-brand">Ecosystems.</span>
+                </h1>
+                <p class="text-gray-400 text-lg leading-relaxed max-w-lg font-medium">
+                    High-retention carousels and data-driven infographics engineered for maximum saves, shares, and algorithmic reach.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="glass-card p-6 rounded-2xl border border-gray-800">
+                    <i data-feather="instagram" class="text-brand w-6 h-6 mb-4"></i>
+                    <h3 class="font-medium text-white mb-1">1000x Stocks</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide">Educational Carousels</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border border-gray-800">
+                    <i data-feather="bar-chart-2" class="text-brand w-6 h-6 mb-4"></i>
+                    <h3 class="font-medium text-white mb-1">Briefs Finance</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide">Financial Infographics</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Social Media Branding: Briefs & 1000x -->
+        <div class="mt-32 pt-32 border-t border-border reveal-on-scroll">
+            <div class="mb-16">
+                <p class="text-brand font-medium tracking-widest uppercase text-xs mb-3">Audience Growth</p>
+                <h2 class="text-4xl md:text-5xl font-medium mb-4 text-white tracking-tight">Social Media Ecosystems</h2>
+                <p class="text-gray-400 text-lg max-w-2xl font-medium">High-retention carousels and data-driven infographics engineered for maximum saves, shares, and algorithmic reach.</p>
+            </div>
+            
+            <!-- 1000x Stocks Feature -->
+            <div class="bg-[#0a0a0a] rounded-3xl border border-gray-800/50 p-8 md:p-12 mb-12 flex flex-col xl:flex-row gap-12 items-center hover:border-brand/30 transition duration-500">
+                <div class="w-full xl:w-1/3">
+                    <h3 class="text-3xl font-medium text-white mb-4">1000x Stocks</h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">Educational Instagram carousels designed to break down complex financial literacy into bite-sized, highly shareable visual assets.</p>
+                    <div class="flex gap-4">
+                        <span class="px-4 py-1.5 rounded-full border border-gray-800 text-xs text-gray-400 uppercase tracking-widest">Instagram</span>
+                        <span class="px-4 py-1.5 rounded-full border border-gray-800 text-xs text-gray-400 uppercase tracking-widest">Carousels</span>
+                    </div>
+                </div>
+                
+                <!-- 10-Slide Interactive Carousel -->
+                <div class="w-full xl:w-2/3 relative group">
+                    <!-- Left Arrow -->
+                    <button onclick="document.getElementById('1000x-slider').scrollBy({left: -300, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-[#050505]/90 hover:bg-brand text-white border border-gray-700 p-2 rounded-full shadow-[0_0_15px_rgba(0,0,0,0.5)] transition opacity-0 group-hover:opacity-100 hidden md:block">
+                        <i data-feather="chevron-left"></i>
+                    </button>
+                    
+                    <div id="1000x-slider" class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 hide-scrollbar items-center" style="scrollbar-width: none; -ms-overflow-style: none;">
+                        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#e11d48',
+                        dark: '#0a0a0a',
+                        card: '#121212',
+                        border: '#262626'
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+                            .hide-scrollbar::-webkit-scrollbar { display: none; }
+                        </style>
+                        <!-- Slide 1 -->
+                        <div class="w-[85%] md:w-1/2 flex-shrink-0 snap-center"><img alt="Michael Jay Marketing Portfolio" src="carousel_1000x/8.png" class="w-full h-auto object-cover rounded-xl border border-gray-800 shadow-2xl"></div>
+                        <!-- Slide 2 -->
+                        <div class="w-[85%] md:w-1/2 flex-shrink-0 snap-center"><img alt="Michael Jay Marketing Portfolio" src="carousel_1000x/9.png" class="w-full h-auto object-cover rounded-xl border border-gray-800 shadow-2xl"></div>
+                        <!-- Slide 3 -->
+                        <div class="w-[85%] md:w-1/2 flex-shrink-0 snap-center"><img alt="Michael Jay Marketing Portfolio" src="carousel_1000x/10.png" class="w-full h-auto object-cover rounded-xl border border-gray-800 shadow-2xl"></div>
+                        <!-- Slide 4 -->
+                        <div class="w-[85%] md:w-1/2 flex-shrink-0 snap-center"><img alt="Michael Jay Marketing Portfolio" src="carousel_1000x/11.png" class="w-full h-auto object-cover rounded-xl border border-gray-800 shadow-2xl"></div>
+                        <!-- Slide 5 -->
+                        <div class="w-[85%] md:w-1/2 flex-shrink-0 snap-center"><img alt="Michael Jay Marketing Portfolio" src="carousel_1000x/12.png" class="w-full h-auto object-cover rounded-xl border border-gray-800 shadow-2xl"></div>
+                        <!-- Slide 6 -->
+                        <div class="w-[85%] md:w-1/2 flex-shrink-0 snap-center"><img alt="Michael Jay Marketing Portfolio" src="carousel_1000x/13.png" class="w-full h-auto object-cover rounded-xl border border-gray-800 shadow-2xl"></div>
+                        <!-- Slide 7 -->
+                        <div class="w-[85%] md:w-1/2 flex-shrink-0 snap-center"><img alt="Michael Jay Marketing Portfolio" src="carousel_1000x/14.png" class="w-full h-auto object-cover rounded-xl border border-gray-800 shadow-2xl"></div>
+                        <!-- Slide 8 -->
+                        <div class="w-[85%] md:w-1/2 flex-shrink-0 snap-center"><img alt="Michael Jay Marketing Portfolio" src="carousel_1000x/15.png" class="w-full h-auto object-cover rounded-xl border border-gray-800 shadow-2xl"></div>
+                        <!-- Slide 9 -->
+                        <div class="w-[85%] md:w-1/2 flex-shrink-0 snap-center"><img alt="Michael Jay Marketing Portfolio" src="carousel_1000x/16.png" class="w-full h-auto object-cover rounded-xl border border-gray-800 shadow-2xl"></div>
+                        <!-- Slide 10 -->
+                        <div class="w-[85%] md:w-1/2 flex-shrink-0 snap-center"><img alt="Michael Jay Marketing Portfolio" src="carousel_1000x/17.png" class="w-full h-auto object-cover rounded-xl border border-gray-800 shadow-2xl"></div>
+                    </div>
+
+                    <!-- Right Arrow -->
+                    <button onclick="document.getElementById('1000x-slider').scrollBy({left: 300, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-[#050505]/90 hover:bg-brand text-white border border-gray-700 p-2 rounded-full shadow-[0_0_15px_rgba(0,0,0,0.5)] transition opacity-0 group-hover:opacity-100 hidden md:block">
+                        <i data-feather="chevron-right"></i>
+                    </button>
+                    
+                    <!-- Swipe Hint Gradient -->
+                    <div class="absolute right-0 top-0 bottom-4 w-16 bg-gradient-to-l from-[#0a0a0a] to-transparent pointer-events-none rounded-r-xl"></div>
+                </div>
+
+            </div>
+
+            <!-- Briefs Finance Feature -->
+            <div class="mt-32 pt-32 border-t border-border reveal-on-scroll">
+            <div class="bg-[#0a0a0a] rounded-3xl border border-gray-800/50 p-8 md:p-12 mb-12 hover:border-brand/30 transition duration-500">
+                <div class="flex flex-col md:flex-row justify-between md:items-end mb-12 gap-6">
+                    <div class="max-w-xl">
+                        <h3 class="text-3xl font-medium text-white mb-4">Briefs Finance</h3>
+                        <p class="text-gray-500 leading-relaxed">Sleek, minimalist financial infographics summarizing market trends. The dark-mode aesthetic positions the brand as premium and authoritative.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="px-4 py-1.5 rounded-full border border-gray-800 text-xs text-gray-400 uppercase tracking-widest">Infographics</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <img src="briefs_gallery/briefs_raw_1.png" alt="Briefs Finance 1" class="w-full h-auto rounded-xl border border-gray-800 shadow-xl hover:scale-105 transition duration-500">
+                    <img src="briefs_gallery/briefs_raw_2.png" alt="Briefs Finance 2" class="w-full h-auto rounded-xl border border-gray-800 shadow-xl hover:scale-105 transition duration-500">
+                    <img src="briefs_gallery/briefs_raw_3.png" alt="Briefs Finance 3" class="w-full h-auto rounded-xl border border-gray-800 shadow-xl hover:scale-105 transition duration-500">
+                    <img src="briefs_gallery/briefs_raw_4.png" alt="Briefs Finance 4" class="w-full h-auto rounded-xl border border-gray-800 shadow-xl hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+    <!-- INFINITE LOOP FOOTER -->
+    <a href="project-video.html" class="block w-full py-32 bg-[#0a0a0a] border-t border-border group hover:bg-[#0f0f0f] transition duration-500 text-center reveal-on-scroll">
+        <p class="text-gray-500 font-medium tracking-widest uppercase text-sm mb-4 group-hover:text-brand transition">Keep the momentum going</p>
+        <h2 class="text-5xl md:text-7xl font-medium text-gray-300 group-hover:text-white transition flex items-center justify-center gap-6">
+            Next: Video Production 
+            <i data-feather="arrow-right" class="w-12 h-12 text-brand group-hover:translate-x-4 transition duration-300"></i>
+        </h2>
+    </a>
+
+    <script>
+        feather.replace();
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0 };
+            const premiumObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => { premiumObserver.observe(el); });
+        });
+    </script>
+</body>
+</html>

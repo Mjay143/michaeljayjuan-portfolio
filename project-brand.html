@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Identity Kits & High-Converting Lead Magnets | Michael Jay Juan</title>
+    <meta name="author" content="Michael Jay Juan">
+    <meta name="keywords" content="marketing operations, gohighlevel expert, automation specialist, video editing, funnel building, Michael Jay Juan, marketing agency">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#e11d48',
+                        dark: '#0a0a0a',
+                        card: '#121212',
+                        border: '#262626'
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #050505; color: white; font-family: system-ui, -apple-system, sans-serif; }
+        .glass-card { background: rgba(30, 33, 43, 0.4); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        :root { --ease-premium: cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s var(--ease-premium), transform 1s var(--ease-premium);
+            will-change: opacity, transform;
+        }
+        .reveal-on-scroll.is-revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+        /* AMBIENT ANIMATED BACKGROUND */
+        .ambient-orb { position: absolute; border-radius: 50%; filter: blur(120px); z-index: 0; pointer-events: none; opacity: 0.6; animation-duration: 20s; animation-iteration-count: infinite; animation-direction: alternate; animation-timing-function: ease-in-out; }
+        .orb-1 { width: 600px; height: 600px; background: rgba(225,29,72,0.15); top: -10%; right: -10%; animation-name: drift1; }
+        .orb-2 { width: 700px; height: 700px; background: rgba(159,18,57,0.12); bottom: -20%; left: -10%; animation-name: drift2; }
+        .orb-3 { width: 500px; height: 500px; background: rgba(225,29,72,0.1); top: 30%; left: 40%; animation-name: drift3; }
+        @keyframes drift1 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(-100px, 150px) scale(1.2); } }
+        @keyframes drift2 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(200px, -100px) scale(1.1); } }
+        @keyframes drift3 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(-150px, -200px) scale(1.3); } }
+
+</style>
+    <script>tailwind.config={theme:{extend:{colors:{brand:'#e11d48',dark:'#050505',card:'#121212',border:'#262626'}}}}</script>
+
+    <!-- SEO & OPEN GRAPH -->
+    <meta name="description" content="I turn chaos into high-converting marketing engines. From GoHighLevel automations to digital design, see how I help agencies scale.">
+    <meta property="og:title" content="Michael Jay Juan | Marketing Operations Specialist">
+    <meta property="og:description" content="I turn chaos into high-converting marketing engines. From GoHighLevel automations to digital design, see how I help agencies scale.">
+    <meta property="og:image" content="https://michaeljayjuan.com/my_logo.png">
+    <meta property="og:url" content="https://michaeljayjuan.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="my_logo.png">
+    <link rel="apple-touch-icon" href="my_logo.png">
+
+
+    <!-- AI SCHEMA MARKUP -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Jay Juan",
+    "jobTitle": "Marketing Operations Specialist",
+    "url": "https://michaeljayjuan.com",
+    "description": "Expert in GoHighLevel automations, funnel building, and digital marketing operations."
+}
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-97PHMZ331C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-97PHMZ331C');
+    </script>
+</head>
+<body class="antialiased min-h-screen relative overflow-x-hidden">
+
+    <!-- Animated Background -->
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+
+
+    <!-- GLOBAL NAVIGATION -->
+    <nav class="fixed w-full top-0 z-50 bg-[#050505]/90 backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="rounded-xl p-[2px] bg-gradient-to-br from-red-500 via-rose-700 to-[#050505] shadow-[0_0_15px_rgba(225,29,72,0.5)] block hover:scale-105 transition">
+                    <img src="my_logo.png?v=3" alt="Michael Jay Logo" class="h-10 w-10 bg-[#050505] rounded-xl object-contain">
+                </a>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="index.html#home" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">Home</a>
+                <a href="index.html#about" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">About</a>
+                <a href="index.html#services" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">Services</a>
+                <a href="index.html#work" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">Projects</a>
+            </div>
+            <a href="index.html#contact" class="hidden md:inline-flex items-center gap-2 bg-brand hover:bg-rose-700 text-white shadow-[0_0_15px_rgba(225,29,72,0.4)] hover:shadow-[0_0_25px_rgba(225,29,72,0.7)] px-5 py-2.5 text-sm font-medium uppercase tracking-wider rounded transition">
+                Book a Call <i data-feather="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </nav>
+
+    
+    <!-- Ambient Background Glows -->
+    
+    
+
+    <main class="max-w-7xl mx-auto px-6 pt-32 pb-24 relative z-10">
+        
+        
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32 reveal-on-scroll is-revealed">
+            <div>
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-[#0a0a0a] border border-gray-800 text-gray-300 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span> Creative Gallery
+                </div>
+                <h1 class="text-5xl md:text-6xl font-medium mb-6 tracking-tight leading-tight text-white">
+                    Pixels That<br><span class="font-medium text-brand">Perform.</span>
+                </h1>
+                <p class="text-gray-400 text-lg leading-relaxed max-w-lg font-medium">
+                    Beautiful design is nice. Profitable design is better. From high-converting lead magnets to scroll-stopping thumbnails, see how strategic design turns attention into action.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="glass-card p-6 rounded-2xl border border-gray-800">
+                    <i data-feather="book-open" class="text-brand w-6 h-6 mb-4"></i>
+                    <h3 class="font-medium text-white mb-1">Ebooks</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide">Lead Magnets</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border border-gray-800">
+                    <i data-feather="youtube" class="text-brand w-6 h-6 mb-4"></i>
+                    <h3 class="font-medium text-white mb-1">Thumbnails</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide">The Click Factor</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border border-gray-800">
+                    <i data-feather="layout" class="text-brand w-6 h-6 mb-4"></i>
+                    <h3 class="font-medium text-white mb-1">UI Mockups</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide">Frictionless Flow</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border border-gray-800">
+                    <i data-feather="instagram" class="text-brand w-6 h-6 mb-4"></i>
+                    <h3 class="font-medium text-white mb-1">Social Media</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide">Brand Identity</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Social Media / Mockups Section -->
+        <div class="mb-32 reveal-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-medium mb-4">Comprehensive Brand Kits</h2>
+            <p class="text-gray-400 text-lg mb-12">Full-scale visual identity, digital product mockups, and cohesive brand design.</p>
+            
+            
+            
+            
+            <div class="reveal-on-scroll max-w-5xl mx-auto">
+                <!-- BIG FEATURE IMAGE (The 1st Image) -->
+                <div class="mb-6">
+                    <img src="mockups/1.webp" class="w-full h-auto object-contain rounded-xl border border-border shadow-2xl" alt="Main Mockup">
+                </div>
+                
+                
+                <!-- HORIZONTAL SLIDER FOR THE REST OF THE GRAPHICS -->
+                <div class="relative group mt-2">
+                    <!-- Left Arrow -->
+                    <button onclick="document.getElementById('mockup-slider').scrollBy({left: -300, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-[#050505]/90 hover:bg-brand text-white border border-gray-700 p-2 rounded-full shadow-[0_0_15px_rgba(0,0,0,0.5)] transition opacity-0 group-hover:opacity-100">
+                        <i data-feather="chevron-left"></i>
+                    </button>
+                    
+                    <div id="mockup-slider" class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 hide-scrollbar" style="scrollbar-width: none; -ms-overflow-style: none;">
+                        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#e11d48',
+                        dark: '#0a0a0a',
+                        card: '#121212',
+                        border: '#262626'
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+                            .hide-scrollbar::-webkit-scrollbar { display: none; }
+                        </style>
+                        
+                        <!-- The smaller frames (Images 2 through 9) -->
+                        <div class="w-1/3 md:w-1/4 flex-shrink-0 snap-start"><img alt="Michael Jay Marketing Portfolio" src="mockups/2.webp" class="w-full h-auto object-cover rounded-lg border border-border hover:border-brand transition"></div>
+                        <div class="w-1/3 md:w-1/4 flex-shrink-0 snap-start"><img alt="Michael Jay Marketing Portfolio" src="mockups/3.webp" class="w-full h-auto object-cover rounded-lg border border-border hover:border-brand transition"></div>
+                        <div class="w-1/3 md:w-1/4 flex-shrink-0 snap-start"><img alt="Michael Jay Marketing Portfolio" src="mockups/4.webp" class="w-full h-auto object-cover rounded-lg border border-border hover:border-brand transition"></div>
+                        <div class="w-1/3 md:w-1/4 flex-shrink-0 snap-start"><img alt="Michael Jay Marketing Portfolio" src="mockups/5.webp" class="w-full h-auto object-cover rounded-lg border border-border hover:border-brand transition"></div>
+                        <div class="w-1/3 md:w-1/4 flex-shrink-0 snap-start"><img alt="Michael Jay Marketing Portfolio" src="mockups/6.webp" class="w-full h-auto object-cover rounded-lg border border-border hover:border-brand transition"></div>
+                        <div class="w-1/3 md:w-1/4 flex-shrink-0 snap-start"><img alt="Michael Jay Marketing Portfolio" src="mockups/7.webp" class="w-full h-auto object-cover rounded-lg border border-border hover:border-brand transition"></div>
+                        <div class="w-1/3 md:w-1/4 flex-shrink-0 snap-start"><img alt="Michael Jay Marketing Portfolio" src="mockups/8.webp" class="w-full h-auto object-cover rounded-lg border border-border hover:border-brand transition"></div>
+                        <div class="w-1/3 md:w-1/4 flex-shrink-0 snap-start"><img alt="Michael Jay Marketing Portfolio" src="mockups/9.webp" class="w-full h-auto object-cover rounded-lg border border-border hover:border-brand transition"></div>
+                    </div>
+
+                    <!-- Right Arrow -->
+                    <button onclick="document.getElementById('mockup-slider').scrollBy({left: 300, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-[#050505]/90 hover:bg-brand text-white border border-gray-700 p-2 rounded-full shadow-[0_0_15px_rgba(0,0,0,0.5)] transition opacity-0 group-hover:opacity-100">
+                        <i data-feather="chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+        <!-- Ebooks Section -->
+        <div class="mt-32 pt-32 border-t border-border reveal-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-medium mb-4">Authority-Building Lead Magnets</h2>
+            <p class="text-gray-400 text-lg mb-12">Ebooks & Guides designed for high opt-in rates. Beautifully crafted for readability and conversion.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 perspective-1000">
+                
+                <!-- Ebook 1 -->
+                <div class="group relative flex justify-center perspective-[2000px]">
+                    <div class="relative w-full max-w-[300px] aspect-[8.5/11] transform-style-3d transition-transform duration-700 ease-out group-hover:rotate-y-0 rotate-y-[15deg] group-hover:-translate-y-4">
+                        <img src="ebooks/ebook_1.webp" class="w-full h-full object-cover rounded-md shadow-[20px_20px_40px_rgba(0,0,0,0.8)] group-hover:shadow-[0_20px_50px_rgba(225,29,72,0.4)] border-l-4 border-gray-900 border border-gray-800 transition-all duration-700" alt="Ebook Cover 1">
+                        <!-- Spine lighting effect -->
+                        <div class="absolute inset-y-0 left-0 w-4 bg-gradient-to-r from-black/40 to-transparent rounded-l-md pointer-events-none"></div>
+                    </div>
+                </div>
+
+                <!-- Ebook 2 -->
+                <div class="group relative flex justify-center perspective-[2000px]">
+                    <div class="relative w-full max-w-[300px] aspect-[8.5/11] transform-style-3d transition-transform duration-700 ease-out group-hover:rotate-y-0 rotate-y-[15deg] group-hover:-translate-y-4">
+                        <img src="ebooks/ebook_2.webp" class="w-full h-full object-cover rounded-md shadow-[20px_20px_40px_rgba(0,0,0,0.8)] group-hover:shadow-[0_20px_50px_rgba(225,29,72,0.4)] border-l-4 border-gray-900 border border-gray-800 transition-all duration-700" alt="Ebook Cover 2">
+                        <!-- Spine lighting effect -->
+                        <div class="absolute inset-y-0 left-0 w-4 bg-gradient-to-r from-black/40 to-transparent rounded-l-md pointer-events-none"></div>
+                    </div>
+                </div>
+
+                <!-- Ebook 3 -->
+                <div class="group relative flex justify-center perspective-[2000px]">
+                    <div class="relative w-full max-w-[300px] aspect-[8.5/11] transform-style-3d transition-transform duration-700 ease-out group-hover:rotate-y-0 rotate-y-[15deg] group-hover:-translate-y-4">
+                        <img src="ebooks/ebook_3.webp" class="w-full h-full object-cover rounded-md shadow-[20px_20px_40px_rgba(0,0,0,0.8)] group-hover:shadow-[0_20px_50px_rgba(225,29,72,0.4)] border-l-4 border-gray-900 border border-gray-800 transition-all duration-700" alt="Ebook Cover 3">
+                        <!-- Spine lighting effect -->
+                        <div class="absolute inset-y-0 left-0 w-4 bg-gradient-to-r from-black/40 to-transparent rounded-l-md pointer-events-none"></div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Tailwind utility classes for 3D elements injected locally -->
+            <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#e11d48',
+                        dark: '#0a0a0a',
+                        card: '#121212',
+                        border: '#262626'
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+                .perspective-\[2000px\] { perspective: 2000px; }
+                .transform-style-3d { transform-style: preserve-3d; }
+                .rotate-y-\[15deg\] { transform: rotateY(15deg) rotateX(5deg); }
+                .group:hover .group-hover\:rotate-y-0 { transform: rotateY(0deg) rotateX(0deg); }
+            </style>
+        </div>
+
+
+        
+        <!-- Thumbnails Section -->
+        <div class="mt-32 pt-32 border-t border-border reveal-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-medium mb-4">The Click Factor</h2>
+            <p class="text-gray-400 text-lg mb-12">High-CTR YouTube and TikTok Thumbnails engineered to win the feed.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Thumbnail 1 -->
+                <div class="group relative overflow-hidden rounded-xl border border-gray-800 shadow-2xl hover:-translate-y-2 transition duration-500 hover:border-brand/50 hover:shadow-[0_0_30px_rgba(225,29,72,0.15)]">
+                    <img src="thumbnails/thumbnail_1.webp" class="w-full h-auto object-cover transform transition duration-700 group-hover:scale-105" alt="Thumbnail 1">
+                </div>
+                <!-- Thumbnail 2 -->
+                <div class="group relative overflow-hidden rounded-xl border border-gray-800 shadow-2xl hover:-translate-y-2 transition duration-500 hover:border-brand/50 hover:shadow-[0_0_30px_rgba(225,29,72,0.15)]">
+                    <img src="thumbnails/thumbnail_2.webp" class="w-full h-auto object-cover transform transition duration-700 group-hover:scale-105" alt="Thumbnail 2">
+                </div>
+                <!-- Thumbnail 3 -->
+                <div class="group relative overflow-hidden rounded-xl border border-gray-800 shadow-2xl hover:-translate-y-2 transition duration-500 hover:border-brand/50 hover:shadow-[0_0_30px_rgba(225,29,72,0.15)]">
+                    <img src="thumbnails/thumbnail_3.webp" class="w-full h-auto object-cover transform transition duration-700 group-hover:scale-105" alt="Thumbnail 3">
+                </div>
+                <!-- Thumbnail 4 -->
+                <div class="group relative overflow-hidden rounded-xl border border-gray-800 shadow-2xl hover:-translate-y-2 transition duration-500 hover:border-brand/50 hover:shadow-[0_0_30px_rgba(225,29,72,0.15)]">
+                    <img src="thumbnails/thumbnail_4.webp" class="w-full h-auto object-cover transform transition duration-700 group-hover:scale-105" alt="Thumbnail 4">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
+    <!-- INFINITE LOOP FOOTER -->
+    <a href="project-social.html" class="block w-full py-32 bg-[#0a0a0a] border-t border-border group hover:bg-[#0f0f0f] transition duration-500 text-center reveal-on-scroll">
+        <p class="text-gray-500 font-medium tracking-widest uppercase text-sm mb-4 group-hover:text-brand transition">Keep the momentum going</p>
+        <h2 class="text-5xl md:text-7xl font-medium text-gray-300 group-hover:text-white transition flex items-center justify-center gap-6">
+            Next: Social Ecosystems 
+            <i data-feather="arrow-right" class="w-12 h-12 text-brand group-hover:translate-x-4 transition duration-300"></i>
+        </h2>
+    </a>
+
+    <script>
+        feather.replace();
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0 };
+            const premiumObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => { premiumObserver.observe(el); });
+        });
+    </script>
+</body>
+</html>

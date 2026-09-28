@@ -1,0 +1,584 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Jay Juan | Marketing Operations & Automation Specialist</title>
+        <meta name="keywords" content="Marketing Operations, GoHighLevel, GHL Funnels, CRM Automations, Video Editing, CapCut, Agency Scaling, Michael Jay Juan">
+    <meta name="author" content="Michael Jay Juan">
+    <meta name="robots" content="index, follow">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#e11d48', // Deep Crimson Red
+                        dark: '#0a0a0a',
+                        card: '#121212',
+                        border: '#262626'
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #050505; color: white; overflow-x: hidden; }
+        
+        /* AMBIENT ANIMATED BACKGROUND */
+        .ambient-orb { position: absolute; border-radius: 50%; filter: blur(120px); z-index: 0; pointer-events: none; opacity: 0.6; animation-duration: 20s; animation-iteration-count: infinite; animation-direction: alternate; animation-timing-function: ease-in-out; }
+        .orb-1 { width: 600px; height: 600px; background: rgba(225,29,72,0.15); top: -10%; right: -10%; animation-name: drift1; }
+        .orb-2 { width: 700px; height: 700px; background: rgba(159,18,57,0.12); bottom: -20%; left: -10%; animation-name: drift2; }
+        .orb-3 { width: 500px; height: 500px; background: rgba(225,29,72,0.1); top: 30%; left: 40%; animation-name: drift3; }
+        @keyframes drift1 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(-100px, 150px) scale(1.2); } }
+        @keyframes drift2 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(200px, -100px) scale(1.1); } }
+        @keyframes drift3 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(-150px, -200px) scale(1.3); } }
+
+        .glass-panel { background: #121212; border: 1px solid #262626; border-radius: 12px; }
+        .nav-link normal-case tracking-wide { color: #a3a3a3; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; text-transform: uppercase; letter-spacing: 0.05em; }
+        .nav-link normal-case tracking-wide:hover { color: white; }
+    </style>
+
+    <style>
+        :root { --ease-premium: cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s var(--ease-premium), transform 1s var(--ease-premium);
+            will-change: opacity, transform;
+        }
+        .reveal-on-scroll.is-revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <!-- SEO & OPEN GRAPH -->
+    <meta name="description" content="I turn chaos into high-converting marketing engines. From GoHighLevel automations to digital design, see how I help agencies scale.">
+    <meta property="og:title" content="Michael Jay Juan | Marketing Operations Specialist">
+    <meta property="og:description" content="I turn chaos into high-converting marketing engines. From GoHighLevel automations to digital design, see how I help agencies scale.">
+    <meta property="og:image" content="https://michaeljayjuan.com/my_logo.png">
+    <meta property="og:url" content="https://michaeljayjuan.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="my_logo.png">
+    <link rel="apple-touch-icon" href="my_logo.png">
+
+
+    <!-- AI SCHEMA MARKUP -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Jay Juan",
+    "jobTitle": "Marketing Operations Specialist",
+    "url": "https://michaeljayjuan.com",
+    "description": "Expert in GoHighLevel automations, funnel building, and digital marketing operations."
+}
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-97PHMZ331C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-97PHMZ331C');
+    </script>
+</head>
+
+<body class="antialiased selection:bg-brand selection:text-white relative">
+    
+    <!-- Animated Background -->
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full top-0 z-50 bg-[#050505]/90 backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="rounded-xl p-[2px] bg-gradient-to-br from-red-500 via-rose-700 to-[#050505] shadow-[0_0_15px_rgba(225,29,72,0.5)]">
+                    <img src="my_logo.png?v=3" alt="Michael Jay Logo" class="h-10 w-10 bg-[#050505] rounded-xl object-contain">
+                </div>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="#home" class="nav-link normal-case tracking-wide">Home</a>
+                <a href="#about" class="nav-link normal-case tracking-wide">About</a>
+                <a href="#services" class="nav-link normal-case tracking-wide">Services</a>
+                <a href="#work" class="nav-link normal-case tracking-wide">Projects</a>
+                <a href="#contact" class="nav-link normal-case tracking-wide">Contact</a>
+            </div>
+            <a href="#contact" class="hidden md:inline-flex items-center gap-2 bg-brand hover:bg-rose-700 text-white shadow-[0_0_15px_rgba(225,29,72,0.4)] hover:shadow-[0_0_25px_rgba(225,29,72,0.7)] px-5 py-2.5 text-sm font-medium uppercase tracking-wider rounded transition">
+                Book a Strategy Call <i data-feather="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="reveal-on-scroll pt-32 pb-20 min-h-[90vh] flex items-center relative z-10" class="pt-32 pb-20 min-h-[90vh] flex items-center relative z-10">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-brand font-medium tracking-widest uppercase text-sm mb-4">Marketing Operations & Automations</p>
+                <h1 class="text-5xl md:text-6xl font-light leading-[1.1] mb-6 tracking-wide">
+                    I turn chaos into high-converting marketing engines.
+                </h1>
+                <p class="text-gray-400 text-lg mb-8 max-w-xl leading-relaxed">
+                    I help agencies and business owners reclaim their time. From automated GoHighLevel funnels to scroll-stopping content, I manage the operations so you can focus on scaling.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-12">
+                    <a href="#work" class="bg-brand hover:bg-rose-700 text-white shadow-[0_0_15px_rgba(225,29,72,0.4)] hover:shadow-[0_0_25px_rgba(225,29,72,0.7)] px-8 py-3.5 font-medium uppercase tracking-wider rounded flex items-center gap-2 transition">
+                        Explore Case Studies <i data-feather="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <button onclick="document.getElementById('resume-modal').classList.remove('hidden'); document.body.style.overflow='hidden';" class="bg-transparent border border-gray-600 hover:border-brand text-white hover:shadow-[0_0_20px_rgba(225,29,72,0.4)] px-8 py-3.5 font-medium uppercase tracking-wider rounded flex items-center gap-2 transition">
+                        View Resume <i data-feather="file-text" class="w-4 h-4"></i>
+                    </button>
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500 mb-3 uppercase tracking-widest font-semibold">Core Software & Stack:</p>
+                    <div class="flex flex-wrap items-center gap-2.5 max-w-3xl">
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-card/80 border border-border text-xs font-medium text-gray-300 hover:border-brand/60 hover:text-white transition">
+                            <i data-feather="box" class="w-3.5 h-3.5 text-brand"></i> GoHighLevel
+                        </span>
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-card/80 border border-border text-xs font-medium text-gray-300 hover:border-brand/60 hover:text-white transition">
+                            <i data-feather="scissors" class="w-3.5 h-3.5 text-brand"></i> CapCut
+                        </span>
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-card/80 border border-border text-xs font-medium text-gray-300 hover:border-brand/60 hover:text-white transition">
+                            <i data-feather="layout" class="w-3.5 h-3.5 text-brand"></i> Canva
+                        </span>
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-card/80 border border-border text-xs font-medium text-gray-300 hover:border-brand/60 hover:text-white transition">
+                            <i data-feather="film" class="w-3.5 h-3.5 text-brand"></i> Filmora
+                        </span>
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-card/80 border border-border text-xs font-medium text-gray-300 hover:border-brand/60 hover:text-white transition">
+                            <i data-feather="aperture" class="w-3.5 h-3.5 text-brand"></i> Photoshop
+                        </span>
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-card/80 border border-border text-xs font-medium text-gray-300 hover:border-brand/60 hover:text-white transition">
+                            <i data-feather="hash" class="w-3.5 h-3.5 text-brand"></i> Slack
+                        </span>
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-card/80 border border-border text-xs font-medium text-gray-300 hover:border-brand/60 hover:text-white transition">
+                            <i data-feather="cloud" class="w-3.5 h-3.5 text-brand"></i> Google Workspace
+                        </span>
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-card/80 border border-border text-xs font-medium text-gray-300 hover:border-brand/60 hover:text-white transition">
+                            <i data-feather="cpu" class="w-3.5 h-3.5 text-brand"></i> AI Stack (Claude/GPT)
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Portrait Image -->
+            <div class="relative h-[600px] hidden lg:block rounded-3xl overflow-hidden border border-gray-800/50 shadow-2xl">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent z-10 bottom-0"></div>
+                <img src="hero_arms_crossed_upscaled_1790486820284.jpg" alt="Michael Jay" class="w-full h-full object-cover object-top filter contrast-110 grayscale-[20%] drop-shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="reveal-on-scroll py-24 border-t border-border" class="py-24 border-t border-border">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="relative rounded-2xl overflow-hidden glass-panel h-[500px]">
+                <img src="about_laptop_solo_1790486963545.jpg" alt="Working" class="w-full h-full object-cover filter contrast-110 -scale-x-100">
+            </div>
+            <div>
+                <p class="text-brand font-medium tracking-widest uppercase text-xs mb-3">Your Backend Operator</p>
+                <h2 class="text-4xl font-medium mb-6">Streamlined operations for growing agencies.</h2>
+                <p class="text-gray-400 mb-8 leading-relaxed">
+                    I am a Marketing Operations Specialist with over 3 years of experience streamlining agency workflows. From building automated funnels to editing viral short-form content, I love turning complex marketing problems into simple, beautiful, and intuitive solutions.<br><br><span class="text-white font-medium border-l-2 border-brand pl-3">Fully available to integrate with US Timezones (EST/PST).</span>
+                </p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-start gap-3 text-gray-300"><i data-feather="check-circle" class="text-brand w-5 h-5 shrink-0"></i> <span>Clean, high-converting funnel design</span></li>
+                    <li class="flex items-start gap-3 text-gray-300"><i data-feather="check-circle" class="text-brand w-5 h-5 shrink-0"></i> <span>Strong focus on engagement & retention metrics</span></li>
+                    <li class="flex items-start gap-3 text-gray-300"><i data-feather="check-circle" class="text-brand w-5 h-5 shrink-0"></i> <span>Agile, collaborative and highly detail-oriented</span></li>
+                </ul>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="glass-panel p-5 flex items-center gap-4">
+                        <i data-feather="clock" class="text-brand w-8 h-8"></i>
+                        <div>
+                            <div class="font-medium text-xl">15+</div>
+                            <div class="text-xs text-gray-500 uppercase">Hours Saved Weekly</div>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-5 flex items-center gap-4">
+                        <i data-feather="briefcase" class="text-brand w-8 h-8"></i>
+                        <div>
+                            <div class="font-medium text-xl">20%</div>
+                            <div class="text-xs text-gray-500 uppercase">Avg Funnel Opt-In Rates</div>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-5 flex items-center gap-4">
+                        <i data-feather="users" class="text-brand w-8 h-8"></i>
+                        <div>
+                            <div class="font-medium text-xl">50+</div>
+                            <div class="text-xs text-gray-500 uppercase">Projects Launched</div>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-5 flex items-center gap-4">
+                        <i data-feather="shield" class="text-brand w-8 h-8"></i>
+                        <div>
+                            <div class="font-medium text-xl">100%</div>
+                            <div class="text-xs text-gray-500 uppercase">US Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="reveal-on-scroll py-24 border-t border-border" class="py-24 border-t border-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-brand font-medium tracking-widest uppercase text-xs mb-3">What I Do</p>
+                <h2 class="text-4xl font-medium">How I Accelerate Your Growth</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="glass-panel p-8 text-center hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-brand/10 text-brand rounded-xl">
+                        <i data-feather="layout" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-3">GoHighLevel Funnels</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Building responsive, fast, and scalable sales funnels and automated workflows.</p>
+                </div>
+
+                <div class="glass-panel p-8 text-center hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-brand/10 text-brand rounded-xl">
+                        <i data-feather="video" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-3">Video Editing</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Clean and effective short and long-form video content using CapCut & Filmora.</p>
+                </div>
+
+                <div class="glass-panel p-8 text-center hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-brand/10 text-brand rounded-xl">
+                        <i data-feather="image" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-3">Graphic Design</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Designing high-converting thumbnails, social media posts, and brand assets.</p>
+                </div>
+
+                <div class="glass-panel p-8 text-center hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-brand/10 text-brand rounded-xl">
+                        <i data-feather="settings" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-3">Backend Operations</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Managing daily marketing operations, client fulfillment, and CRM management.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SELECTED WORK SECTION -->
+    <section id="work" class="reveal-on-scroll py-24 border-t border-border bg-[#050505]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <p class="text-brand font-medium tracking-widest uppercase text-xs mb-3">Featured Projects</p>
+                    <h2 class="text-5xl font-medium">Selected Work</h2>
+                </div>
+            </div>
+            
+            <!-- Minimalist Typography List -->
+            <div class="flex flex-col border-t border-border mt-12">
+                
+                <!-- Project 1 -->
+                <a href="project-ghl.html" class="reveal-on-scroll group flex flex-col md:flex-row md:items-center justify-between py-12 border-b border-border hover:bg-[#0a0a0a] transition duration-500 md:px-6 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                    <div class="flex items-center gap-8 relative z-10 transform transition duration-500 group-hover:translate-x-6">
+                        <span class="text-gray-700 font-mono text-xl group-hover:text-brand transition">01</span>
+                        <h3 class="text-4xl md:text-6xl font-light tracking-wide text-gray-400 group-hover:text-white transition duration-500">GHL Web & Funnels</h3>
+                    </div>
+                    <div class="flex items-center gap-12 mt-6 md:mt-0 relative z-10">
+                        <p class="text-gray-600 font-medium uppercase tracking-widest text-sm hidden lg:block group-hover:text-brand transition">Development</p>
+                        <div class="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center group-hover:bg-brand group-hover:border-brand transition duration-500 group-hover:shadow-[0_0_30px_rgba(225,29,72,0.6)] group-hover:-rotate-45">
+                            <i data-feather="arrow-right" class="text-gray-400 group-hover:text-white w-6 h-6 transition"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="project-brand.html" class="reveal-on-scroll group flex flex-col md:flex-row md:items-center justify-between py-12 border-b border-border hover:bg-[#0a0a0a] transition duration-500 md:px-6 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                    <div class="flex items-center gap-8 relative z-10 transform transition duration-500 group-hover:translate-x-6">
+                        <span class="text-gray-700 font-mono text-xl group-hover:text-brand transition">02</span>
+                        <h3 class="text-4xl md:text-6xl font-light tracking-wide text-gray-400 group-hover:text-white transition duration-500">Brand Identity Kits</h3>
+                    </div>
+                    <div class="flex items-center gap-12 mt-6 md:mt-0 relative z-10">
+                        <p class="text-gray-600 font-medium uppercase tracking-widest text-sm hidden lg:block group-hover:text-brand transition">Art Direction</p>
+                        <div class="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center group-hover:bg-brand group-hover:border-brand transition duration-500 group-hover:shadow-[0_0_30px_rgba(225,29,72,0.6)] group-hover:-rotate-45">
+                            <i data-feather="arrow-right" class="text-gray-400 group-hover:text-white w-6 h-6 transition"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Project 3 -->
+                <a href="project-social.html" class="reveal-on-scroll group flex flex-col md:flex-row md:items-center justify-between py-12 border-b border-border hover:bg-[#0a0a0a] transition duration-500 md:px-6 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                    <div class="flex items-center gap-8 relative z-10 transform transition duration-500 group-hover:translate-x-6">
+                        <span class="text-gray-700 font-mono text-xl group-hover:text-brand transition">03</span>
+                        <h3 class="text-4xl md:text-6xl font-light tracking-wide text-gray-400 group-hover:text-white transition duration-500">Social Ecosystems</h3>
+                    </div>
+                    <div class="flex items-center gap-12 mt-6 md:mt-0 relative z-10">
+                        <p class="text-gray-600 font-medium uppercase tracking-widest text-sm hidden lg:block group-hover:text-brand transition">Content Design</p>
+                        <div class="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center group-hover:bg-brand group-hover:border-brand transition duration-500 group-hover:shadow-[0_0_30px_rgba(225,29,72,0.6)] group-hover:-rotate-45">
+                            <i data-feather="arrow-right" class="text-gray-400 group-hover:text-white w-6 h-6 transition"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="project-video.html" class="reveal-on-scroll group flex flex-col md:flex-row md:items-center justify-between py-12 border-b border-border hover:bg-[#0a0a0a] transition duration-500 md:px-6 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                    <div class="flex items-center gap-8 relative z-10 transform transition duration-500 group-hover:translate-x-6">
+                        <span class="text-gray-700 font-mono text-xl group-hover:text-brand transition">04</span>
+                        <h3 class="text-4xl md:text-6xl font-light tracking-wide text-gray-400 group-hover:text-white transition duration-500">Video Production</h3>
+                    </div>
+                    <div class="flex items-center gap-12 mt-6 md:mt-0 relative z-10">
+                        <p class="text-gray-600 font-medium uppercase tracking-widest text-sm hidden lg:block group-hover:text-brand transition">Video Editing</p>
+                        <div class="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center group-hover:bg-brand group-hover:border-brand transition duration-500 group-hover:shadow-[0_0_30px_rgba(225,29,72,0.6)] group-hover:-rotate-45">
+                            <i data-feather="arrow-right" class="text-gray-400 group-hover:text-white w-6 h-6 transition"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="reveal-on-scroll py-24 border-t border-border" class="py-24 border-t border-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Info -->
+                <div>
+                    <p class="text-brand font-medium tracking-widest uppercase text-xs mb-3">Get In Touch</p>
+                    <h2 class="text-4xl md:text-5xl font-medium mb-6">Ready to Streamline Your Marketing Operations?</h2>
+                    <p class="text-gray-400 mb-10">Have a project in mind or looking for a reliable Marketing Operations Specialist? I'd love to hear from you.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 text-gray-300">
+                            <i data-feather="mail" class="text-brand w-5 h-5"></i>
+                            <a href="mailto:mail@michaeljayjuan.com" class="hover:text-brand transition">mail@michaeljayjuan.com</a>
+                        </div>
+                        <div class="flex items-center gap-4 text-gray-300">
+                            <i data-feather="phone" class="text-brand w-5 h-5"></i>
+                            <a href="tel:09610513391" class="hover:text-brand transition">09610513391</a>
+                        </div>
+                        <div class="flex items-center gap-4 text-gray-300">
+                            <i data-feather="map-pin" class="text-brand w-5 h-5"></i>
+                            <span>Albay, Philippines</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="glass-panel p-8">
+                    <iframe
+    src="https://link.nurture2profit.com/widget/form/t0jkD9VAUiBjijNRJlr1"
+    style="width:100%;height:500px;border:none;border-radius:8px"
+    id="inline-t0jkD9VAUiBjijNRJlr1" 
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="Michael Jay Form"
+    data-height="undefined"
+    data-layout-iframe-id="inline-t0jkD9VAUiBjijNRJlr1"
+    data-form-id="t0jkD9VAUiBjijNRJlr1"
+    data-cookie-consent="true"
+    data-cookie-consent-provider="auto"
+    title="Michael Jay Form"
+    >
+</iframe>
+<script src="https://link.nurture2profit.com/js/form_embed.js"></script>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 border-t border-border bg-[#050505] text-center">
+        <div class="rounded-xl p-[2px] bg-gradient-to-br from-red-500 via-rose-700 to-[#050505] shadow-[0_0_15px_rgba(225,29,72,0.5)] inline-block mb-6 hover:scale-105 transition duration-300">
+            <img src="my_logo.png?v=3" alt="Michael Jay Logo" class="h-12 w-12 bg-[#050505] rounded-xl object-contain">
+        </div>
+        <p class="text-gray-500 text-sm">&copy; 2026 Michael Jay Juan. All rights reserved.</p>
+    </footer>
+
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0 };
+            const premiumObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+                premiumObserver.observe(el);
+            });
+            
+            // Immediately reveal hero section elements
+            setTimeout(() => {
+                document.getElementById('home').classList.add('is-revealed');
+            }, 100);
+        });
+    </script>
+
+    <!-- RESUME MODAL -->
+    <div id="resume-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 opacity-100 transition-opacity duration-300">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="document.getElementById('resume-modal').classList.add('hidden'); document.body.style.overflow='';"></div>
+        
+        <!-- Modal Content -->
+        <div class="relative bg-[#0a0a0a] border border-gray-800 rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl hide-scrollbar">
+            
+            <!-- Sticky Header -->
+            <div class="sticky top-0 bg-[#0a0a0a]/95 backdrop-blur-xl border-b border-gray-800 p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 z-20">
+                <div class="flex items-center gap-4">
+                    <img src="hero_arms_crossed_upscaled_1790486820284.jpg" alt="Michael Jay Photo" class="w-16 h-16 md:w-20 md:h-20 rounded-xl object-cover object-top border border-gray-700 shadow-[0_0_15px_rgba(225,29,72,0.2)]">
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-medium text-white">Michael Jay Juan</h2>
+                        <p class="text-brand text-xs md:text-sm tracking-widest uppercase mt-1">Marketing Operations & Automations</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center gap-4 self-stretch md:self-auto justify-between md:justify-end mt-2 md:mt-0">
+                    <a href="#contact" onclick="document.getElementById('resume-modal').classList.add('hidden'); document.body.style.overflow='';" class="bg-brand hover:bg-rose-700 text-white shadow-[0_0_15px_rgba(225,29,72,0.4)] px-6 py-2.5 text-sm font-medium uppercase tracking-wider rounded transition flex items-center gap-2 w-full md:w-auto justify-center">
+                        Book a Call <i data-feather="arrow-right" class="w-4 h-4"></i>
+                    </a>
+
+                </div>
+                
+
+            </div>
+
+            <!-- Resume Body -->
+            <div class="p-8 md:p-12">
+                
+                <!-- Profile Summary -->
+                <div class="mb-12">
+                    <h3 class="text-sm text-gray-500 uppercase tracking-widest font-semibold mb-4 border-b border-gray-800 pb-2">Profile Summary</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Results-driven Marketing Operations Specialist specializing in GoHighLevel automations, high-converting sales funnels, and retention-engineered video production. Proven track record of architecting scalable backend marketing engines that reclaim 15+ hours weekly and accelerate client revenue.
+                    </p>
+                </div>
+
+                <!-- Experience -->
+                <div class="mb-12">
+                    <h3 class="text-sm text-gray-500 uppercase tracking-widest font-semibold mb-6 border-b border-gray-800 pb-2">Professional Experience</h3>
+                    
+                    <!-- Job 1 -->
+                    <div class="mb-8">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                            <h4 class="text-lg font-medium text-white">Marketing Operations & Creative Lead</h4>
+                            <span class="text-brand text-sm font-mono mt-1 md:mt-0">2022 - Present</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4">TJ Solutions | Remote</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-300 text-sm leading-relaxed">
+                            <li>Architected and managed GoHighLevel (GHL) workflows, automating lead nurturing sequences and operational pipelines.</li>
+                            <li>Designed high-converting sales funnels, landing pages, and authority-building lead magnets (Ebooks & Guides).</li>
+                            <li>Spearheaded end-to-end video production using CapCut & Filmora, editing both long-form YouTube documentaries and viral short-form reels.</li>
+                            <li>Developed comprehensive Brand Identity Kits to ensure consistent visual aesthetics across all social ecosystems.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div>
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                            <h4 class="text-lg font-medium text-white">Freelance Video Editor & Designer</h4>
+                            <span class="text-brand text-sm font-mono mt-1 md:mt-0">2020 - 2022</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4">Independent Contractor</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-300 text-sm leading-relaxed">
+                            <li>Edited high-retention social media content tailored for Instagram, TikTok, and YouTube.</li>
+                            <li>Designed high-CTR YouTube thumbnails, social media carousels, and engaging data-driven infographics.</li>
+                            <li>Collaborated with various digital creators to optimize their content strategy and visual branding.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Skills & Tools -->
+                <div>
+                    <h3 class="text-sm text-gray-500 uppercase tracking-widest font-semibold mb-6 border-b border-gray-800 pb-2">Core Competencies & Tech Stack</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+                        
+                        <div>
+                            <h4 class="text-white font-medium mb-3">Platforms & Automations</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded text-xs border border-blue-800/50">GoHighLevel (GHL)</span>
+                                <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded text-xs border border-gray-700">Google Workspace</span>
+                                <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded text-xs border border-gray-700">Slack</span>
+                                <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded text-xs border border-gray-700">CRM Management</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-white font-medium mb-3">Creative & Design</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded text-xs border border-gray-700">CapCut</span>
+                                <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded text-xs border border-gray-700">Filmora</span>
+                                <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded text-xs border border-gray-700">Canva</span>
+                                <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded text-xs border border-gray-700">Adobe Photoshop</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-white font-medium mb-3">AI Stack</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-emerald-900/30 text-emerald-300 rounded text-xs border border-emerald-800/50">ChatGPT</span>
+                                <span class="px-3 py-1 bg-emerald-900/30 text-emerald-300 rounded text-xs border border-emerald-800/50">Claude</span>
+                                <span class="px-3 py-1 bg-emerald-900/30 text-emerald-300 rounded text-xs border border-emerald-800/50">Gemini</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-white font-medium mb-3">Specialties</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-brand/20 text-brand rounded text-xs border border-brand/30">Funnel Building</span>
+                                <span class="px-3 py-1 bg-brand/20 text-brand rounded text-xs border border-brand/30">Lead Magnets</span>
+                                <span class="px-3 py-1 bg-brand/20 text-brand rounded text-xs border border-brand/30">Brand Kits</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <style>
+            .hide-scrollbar::-webkit-scrollbar { display: none; }
+            .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        </style>
+    </div>
+
+    <script>
+        feather.replace();
+        // Also run it on a slight delay just in case some other script modifies the DOM
+        setTimeout(() => {
+            if(window.feather) feather.replace();
+        }, 500);
+    </script>
+</body>
+
+</html>
+

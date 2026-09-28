@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoHighLevel (GHL) Funnels & Web Development Case Study | Michael Jay Juan</title>
+    <meta name="author" content="Michael Jay Juan">
+    <meta name="keywords" content="marketing operations, gohighlevel expert, automation specialist, video editing, funnel building, Michael Jay Juan, marketing agency">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: '#e11d48', dark: '#050505', card: '#121212', border: '#262626' }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #050505; color: white; font-family: system-ui, -apple-system, sans-serif; }
+        .gradient-text { color: #e11d48; }
+        .glass-card { background: rgba(30, 33, 43, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        
+        /* Mac Browser Window CSS */
+        .mac-window { border-radius: 12px; overflow: hidden; background: #1e1e1e; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
+        .mac-header { background: #2d2d2d; padding: 12px 16px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .mac-dot { width: 12px; height: 12px; border-radius: 50%; }
+        .mac-dot.close { background: #ff5f56; }
+        .mac-dot.min { background: #ffbd2e; }
+        .mac-dot.max { background: #27c93f; }
+        
+        /* Carousel */
+        .carousel-container { position: relative; width: 100%; }
+        .carousel-btn { position: absolute; top: 40%; transform: translateY(-50%); background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(255,255,255,0.1); color: white; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; backdrop-filter: blur(8px); transition: all 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .carousel-btn:hover { background: rgba(59, 130, 246, 0.9); scale: 1.1; }
+        .carousel-btn.left { left: -24px; }
+        .carousel-btn.right { right: -24px; }
+        .carousel-track { display: flex; gap: 1.5rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 2rem; scrollbar-width: thin; scrollbar-color: #3b82f6 #1e212b; scroll-behavior: smooth; }
+        .carousel-track::-webkit-scrollbar { height: 8px; }
+        .carousel-track::-webkit-scrollbar-track { background: #1e212b; border-radius: 4px; }
+        .carousel-track::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 4px; }
+        .carousel-item { scroll-snap-align: center; flex: 0 0 260px; }
+    
+        /* AMBIENT ANIMATED BACKGROUND */
+        .ambient-orb { position: absolute; border-radius: 50%; filter: blur(120px); z-index: 0; pointer-events: none; opacity: 0.6; animation-duration: 20s; animation-iteration-count: infinite; animation-direction: alternate; animation-timing-function: ease-in-out; }
+        .orb-1 { width: 600px; height: 600px; background: rgba(225,29,72,0.15); top: -10%; right: -10%; animation-name: drift1; }
+        .orb-2 { width: 700px; height: 700px; background: rgba(159,18,57,0.12); bottom: -20%; left: -10%; animation-name: drift2; }
+        .orb-3 { width: 500px; height: 500px; background: rgba(225,29,72,0.1); top: 30%; left: 40%; animation-name: drift3; }
+        @keyframes drift1 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(-100px, 150px) scale(1.2); } }
+        @keyframes drift2 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(200px, -100px) scale(1.1); } }
+        @keyframes drift3 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(-150px, -200px) scale(1.3); } }
+
+</style>
+
+    <!-- SEO & OPEN GRAPH -->
+    <meta name="description" content="I turn chaos into high-converting marketing engines. From GoHighLevel automations to digital design, see how I help agencies scale.">
+    <meta property="og:title" content="Michael Jay Juan | Marketing Operations Specialist">
+    <meta property="og:description" content="I turn chaos into high-converting marketing engines. From GoHighLevel automations to digital design, see how I help agencies scale.">
+    <meta property="og:image" content="https://michaeljayjuan.com/my_logo.png">
+    <meta property="og:url" content="https://michaeljayjuan.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="my_logo.png">
+    <link rel="apple-touch-icon" href="my_logo.png">
+
+
+    <!-- AI SCHEMA MARKUP -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Jay Juan",
+    "jobTitle": "Marketing Operations Specialist",
+    "url": "https://michaeljayjuan.com",
+    "description": "Expert in GoHighLevel automations, funnel building, and digital marketing operations."
+}
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-97PHMZ331C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-97PHMZ331C');
+    </script>
+</head>
+<body class="antialiased min-h-screen relative overflow-x-hidden">
+
+    <!-- Animated Background -->
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+
+
+    <!-- GLOBAL NAVIGATION -->
+    <nav class="fixed w-full top-0 z-50 bg-[#050505]/90 backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="rounded-xl p-[2px] bg-gradient-to-br from-red-500 via-rose-700 to-[#050505] shadow-[0_0_15px_rgba(225,29,72,0.5)] block hover:scale-105 transition">
+                    <img src="my_logo.png?v=3" alt="Michael Jay Logo" class="h-10 w-10 bg-[#050505] rounded-xl object-contain">
+                </a>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="index.html#home" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">Home</a>
+                <a href="index.html#about" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">About</a>
+                <a href="index.html#services" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">Services</a>
+                <a href="index.html#work" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">Projects</a>
+            </div>
+            <a href="index.html#contact" class="hidden md:inline-flex items-center gap-2 bg-brand hover:bg-rose-700 text-white shadow-[0_0_15px_rgba(225,29,72,0.4)] hover:shadow-[0_0_25px_rgba(225,29,72,0.7)] px-5 py-2.5 text-sm font-medium uppercase tracking-wider rounded transition">
+                Book a Call <i data-feather="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </nav>
+
+    
+    <div class="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-rose-900/20 to-transparent pointer-events-none"></div>
+
+    <main class="max-w-7xl mx-auto px-6 pt-32 pb-24 relative z-10">
+        
+        
+
+        <div class="text-center max-w-3xl mx-auto mb-24">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-brand/10 border border-brand/20 text-brand rounded-full text-[11px] font-bold uppercase tracking-widest mb-6">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand animate-pulse"></span> Web Development
+            </div>
+            <h1 class="text-5xl md:text-5xl md:text-5xl font-medium mb-6 tracking-tight leading-tight text-white">
+                Funnels & <span class="gradient-text">Websites</span>
+            </h1>
+            <p class="text-lg text-gray-400 leading-relaxed">
+                High-converting sales funnels, landing pages, and full business websites built entirely inside GoHighLevel. Engineered for speed, conversions, and automation.
+            </p>
+        </div>
+
+        <!-- Featured 3 Sites -->
+        <h2 class="text-2xl font-bold text-white mb-10 flex items-center gap-3"><i data-feather="star" class="text-brand"></i> Featured Builds</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-32">
+            
+            <!-- Featured 1: Jason Pritchard -->
+            <div class="group">
+                <div class="mac-window mb-6 h-64 md:h-80 bg-gray-900 relative group-hover:-translate-y-2 transition duration-500 group-hover:shadow-[0_20px_40px_-15px_rgba(6,182,212,0.3)]">
+                    <div class="mac-header flex justify-between">
+                        <div class="flex gap-2">
+                            <div class="mac-dot close"></div>
+                            <div class="mac-dot min"></div>
+                            <div class="mac-dot max"></div>
+                        </div>
+                        <div class="text-[10px] text-gray-500 font-mono bg-black/50 px-3 py-1 rounded-full">jasonpritchard.com</div>
+                    </div>
+                    <div class="w-full h-[calc(100%-41px)] bg-gray-800 flex items-center justify-center relative overflow-hidden">
+                        <img src="jason_user.png" alt="Jason Pritchard Website" class="w-full h-auto object-cover object-top hover:object-bottom transition-all duration-[5s] ease-in-out">
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand transition">Jason Pritchard</h3>
+                <p class="text-sm text-gray-400 mb-4">High-end personal brand website designed to establish authority and generate leads.</p>
+                <a href="https://jasonpritchard.com/" target="_blank" class="text-brand text-sm font-bold flex items-center gap-1 hover:text-brand">Visit Live Site <i data-feather="arrow-up-right" class="w-4 h-4"></i></a>
+            </div>
+
+            <!-- Featured 2: ScrewPile PH -->
+            <div class="group">
+                <div class="mac-window mb-6 h-64 md:h-80 bg-gray-900 relative group-hover:-translate-y-2 transition duration-500 group-hover:shadow-[0_20px_40px_-15px_rgba(6,182,212,0.3)]">
+                    <div class="mac-header flex justify-between">
+                        <div class="flex gap-2">
+                            <div class="mac-dot close"></div>
+                            <div class="mac-dot min"></div>
+                            <div class="mac-dot max"></div>
+                        </div>
+                        <div class="text-[10px] text-gray-500 font-mono bg-black/50 px-3 py-1 rounded-full">screwpileph.com</div>
+                    </div>
+                    <div class="w-full h-[calc(100%-41px)] bg-gray-800 flex items-center justify-center relative overflow-hidden">
+                        <img src="ghl_7.png" alt="ScrewPile PH Website" class="w-full h-auto object-cover object-top hover:object-bottom transition-all duration-[5s] ease-in-out">
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand transition">ScrewPile PH</h3>
+                <p class="text-sm text-gray-400 mb-4">Industrial service website built for performance, trust, and clear service offerings.</p>
+                <a href="https://screwpileph.com/" target="_blank" class="text-brand text-sm font-bold flex items-center gap-1 hover:text-brand">Visit Live Site <i data-feather="arrow-up-right" class="w-4 h-4"></i></a>
+            </div>
+
+            <!-- Featured 3: Duraseal -->
+            <div class="group">
+                <div class="mac-window mb-6 h-64 md:h-80 bg-gray-900 relative group-hover:-translate-y-2 transition duration-500 group-hover:shadow-[0_20px_40px_-15px_rgba(6,182,212,0.3)]">
+                    <div class="mac-header flex justify-between">
+                        <div class="flex gap-2">
+                            <div class="mac-dot close"></div>
+                            <div class="mac-dot min"></div>
+                            <div class="mac-dot max"></div>
+                        </div>
+                        <div class="text-[10px] text-gray-500 font-mono bg-black/50 px-3 py-1 rounded-full">duraseal.ca</div>
+                    </div>
+                    <div class="w-full h-[calc(100%-41px)] bg-gray-800 flex items-center justify-center relative overflow-hidden">
+                        <img src="ghl_1.png" alt="Duraseal Website" class="w-full h-auto object-cover object-top hover:object-bottom transition-all duration-[5s] ease-in-out">
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand transition">DuraSeal</h3>
+                <p class="text-sm text-gray-400 mb-4">Complete business website built for a local service company, optimized for lead generation.</p>
+                <a href="https://duraseal.ca/home" target="_blank" class="text-brand text-sm font-bold flex items-center gap-1 hover:text-brand">Visit Live Site <i data-feather="arrow-up-right" class="w-4 h-4"></i></a>
+            </div>
+
+        </div>
+
+        <!-- Carousel for the Rest -->
+        <div class="mb-20">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3"><i data-feather="layers" class="text-brand"></i> Explore More Builds</h2>
+            
+            <div class="carousel-container relative">
+                <!-- Navigation Arrows -->
+                <button class="carousel-btn left" onclick="scrollCarousel(-300)"><i data-feather="chevron-left"></i></button>
+                <button class="carousel-btn right" onclick="scrollCarousel(300)"><i data-feather="chevron-right"></i></button>
+
+                <div class="carousel-track" id="ghl-carousel">
+                    
+                    <!-- Slide 1 -->
+                    <div class="carousel-item glass-card rounded-2xl group overflow-hidden flex flex-col hover:border-rose-700/50 transition">
+                        <div class="h-32 bg-gray-900 relative overflow-hidden">
+                            <img src="ghl_4.png" alt="Clever Reviewr" class="w-full h-auto object-cover object-top hover:object-bottom transition-all duration-[4s]">
+                        </div>
+                        <div class="p-5 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h4 class="font-bold text-base text-white mb-1 group-hover:text-brand transition">Clever Reviewr</h4>
+                                <p class="text-[11px] text-gray-400 mb-4">Business Website</p>
+                            </div>
+                            <a href="https://cleverreviewr.com/home" target="_blank" class="w-full py-2.5 rounded-lg bg-gray-800 text-xs font-bold text-center text-white group-hover:bg-rose-700 transition">View Project</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item glass-card rounded-2xl group overflow-hidden flex flex-col hover:border-rose-700/50 transition">
+                        <div class="h-32 bg-gray-900 relative overflow-hidden">
+                            <img src="ghl_2.png" alt="Coach Dee" class="w-full h-auto object-cover object-top hover:object-bottom transition-all duration-[4s]">
+                        </div>
+                        <div class="p-5 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h4 class="font-bold text-base text-white mb-1 group-hover:text-brand transition">Coach Dee</h4>
+                                <p class="text-[11px] text-gray-400 mb-4">Masterclass Funnel</p>
+                            </div>
+                            <a href="https://coachdeefoster.com/unlock-secret-masterclass102790" target="_blank" class="w-full py-2.5 rounded-lg bg-gray-800 text-xs font-bold text-center text-white group-hover:bg-rose-700 transition">View Project</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item glass-card rounded-2xl group overflow-hidden flex flex-col hover:border-rose-700/50 transition">
+                        <div class="h-32 bg-gray-900 relative overflow-hidden">
+                            <img src="ghl_6.png?v=2" alt="A Child In Need" class="w-full h-auto object-cover object-top hover:object-bottom transition-all duration-[4s]">
+                        </div>
+                        <div class="p-5 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h4 class="font-bold text-base text-white mb-1 group-hover:text-brand transition">A Child In Need</h4>
+                                <p class="text-[11px] text-gray-400 mb-4">Non-Profit Website</p>
+                            </div>
+                            <a href="https://achildinneed.org/home-page" target="_blank" class="w-full py-2.5 rounded-lg bg-gray-800 text-xs font-bold text-center text-white group-hover:bg-rose-700 transition">View Project</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item glass-card rounded-2xl group overflow-hidden flex flex-col hover:border-rose-700/50 transition">
+                        <div class="h-32 bg-gray-900 relative overflow-hidden">
+                            <img src="ghl_3.png" alt="Pique Properties" class="w-full h-auto object-cover object-top hover:object-bottom transition-all duration-[4s]">
+                        </div>
+                        <div class="p-5 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h4 class="font-bold text-base text-white mb-1 group-hover:text-brand transition">Pique Properties</h4>
+                                <p class="text-[11px] text-gray-400 mb-4">Real Estate Funnel</p>
+                            </div>
+                            <a href="https://direct.piqueproperties.com/131-201-grr-joint-listing-page" target="_blank" class="w-full py-2.5 rounded-lg bg-gray-800 text-xs font-bold text-center text-white group-hover:bg-rose-700 transition">View Project</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="carousel-item glass-card rounded-2xl group overflow-hidden flex flex-col hover:border-rose-700/50 transition">
+                        <div class="h-32 bg-gray-900 relative overflow-hidden">
+                            <img src="ghl_8.png" alt="FE Jeremy" class="w-full h-auto object-cover object-top hover:object-bottom transition-all duration-[4s]">
+                        </div>
+                        <div class="p-5 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h4 class="font-bold text-base text-white mb-1 group-hover:text-brand transition">FE Jeremy</h4>
+                                <p class="text-[11px] text-gray-400 mb-4">Opt-In Funnel Page</p>
+                            </div>
+                            <a href="https://www.fejeremy.com/optin-page-157074-5738" target="_blank" class="w-full py-2.5 rounded-lg bg-gray-800 text-xs font-bold text-center text-white group-hover:bg-rose-700 transition">View Project</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="carousel-item glass-card rounded-2xl group overflow-hidden flex flex-col hover:border-rose-700/50 transition">
+                        <div class="h-32 bg-gray-900 relative overflow-hidden">
+                            <img src="ghl_9.png" alt="Pacific Restoration" class="w-full h-auto object-cover object-top hover:object-bottom transition-all duration-[4s]">
+                        </div>
+                        <div class="p-5 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h4 class="font-bold text-base text-white mb-1 group-hover:text-brand transition">Pacific Restoration</h4>
+                                <p class="text-[11px] text-gray-400 mb-4">Funnel Build Preview</p>
+                            </div>
+                            <a href="https://link.nurture2profit.com/preview/fv2zN7QIP2KnqiGWL6ar" target="_blank" class="w-full py-2.5 rounded-lg bg-gray-800 text-xs font-bold text-center text-white group-hover:bg-rose-700 transition">View Project</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 7 -->
+                    <div class="carousel-item glass-card rounded-2xl group overflow-hidden flex flex-col hover:border-rose-700/50 transition">
+                        <div class="h-32 bg-gray-900 relative overflow-hidden">
+                            <img src="ghl_10.png" alt="Austin Hilton" class="w-full h-auto object-cover object-top hover:object-bottom transition-all duration-[4s]">
+                        </div>
+                        <div class="p-5 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h4 class="font-bold text-base text-white mb-1 group-hover:text-brand transition">Austin Hilton</h4>
+                                <p class="text-[11px] text-gray-400 mb-4">Inner Circle Funnel</p>
+                            </div>
+                            <a href="https://link.nurture2profit.com/preview/axuPP6y9XgXzUFSMxqIz" target="_blank" class="w-full py-2.5 rounded-lg bg-gray-800 text-xs font-bold text-center text-white group-hover:bg-rose-700 transition">View Project</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function scrollCarousel(offset) {
+            const track = document.getElementById('ghl-carousel');
+            track.scrollBy({ left: offset, behavior: 'smooth' });
+        }
+        feather.replace();
+    </script>
+
+    
+        <!-- Backend Automations & CRM Architecture Section -->
+        <div class="mt-32 pt-32 border-t border-border reveal-on-scroll">
+            <div class="mb-16">
+                <p class="text-brand font-medium tracking-widest uppercase text-xs mb-3">Marketing Operations</p>
+                <h2 class="text-4xl md:text-5xl font-medium mb-6">Backend Systems & Automations</h2>
+                <p class="text-gray-400 text-lg max-w-2xl font-medium">Beautiful funnels are useless without a backend that converts. I architect complex GoHighLevel workflows that eliminate manual tasks, nurture leads automatically, and ensure zero drop-offs in the pipeline.</p>
+            </div>
+
+            <!-- Workflow Architecture Showcase -->
+            <div class="bg-[#0a0a0a] rounded-3xl border border-gray-800/50 p-8 md:p-12 mb-12 hover:border-brand/30 transition duration-500">
+                <div class="flex flex-col lg:flex-row gap-12 items-center">
+                    
+                    <!-- Explanation Side -->
+                    <div class="w-full lg:w-1/2">
+                        <h3 class="text-2xl font-medium text-white mb-6">Automated Lead Nurture & Booking System</h3>
+                        <div class="space-y-6">
+                            <div class="border-l-2 border-red-500 pl-4">
+                                <h4 class="text-white font-medium mb-1">The Bottleneck</h4>
+                                <p class="text-gray-500 text-sm">Client was losing 40% of inbound leads due to slow manual response times and disorganized pipeline stages.</p>
+                            </div>
+                            <div class="border-l-2 border-brand pl-4">
+                                <h4 class="text-white font-medium mb-1">The GHL System Built</h4>
+                                <p class="text-gray-500 text-sm">Engineered a 2-way SMS/Voice Drop instant response sequence with round-robin calendar booking, conditional if/else tagging, and a no-show re-engagement loop.</p>
+                            </div>
+                            <div class="border-l-2 border-emerald-500 pl-4">
+                                <h4 class="text-white font-medium mb-1">The Outcome</h4>
+                                <p class="text-gray-500 text-sm">Reduced speed-to-lead to under 60 seconds. Increased booked call show-up rate to 82%, completely automating the pre-sales pipeline.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Workflow Diagram (CSS/HTML) -->
+                    <div class="w-full lg:w-1/2 bg-[#050505] rounded-xl border border-gray-800 p-6 md:p-10 flex flex-col items-center justify-start font-mono text-xs text-center relative overflow-hidden shadow-inner">
+                        
+                        <!-- Flow node 1 -->
+                        <div class="bg-blue-900/20 border border-blue-500/50 text-blue-300 px-6 py-3 rounded-lg w-full max-w-[240px] shadow-[0_0_15px_rgba(59,130,246,0.1)] relative z-10">
+                            <i data-feather="users" class="w-4 h-4 mx-auto mb-2 text-blue-400"></i>
+                            New Lead (Opt-in)
+                        </div>
+                        
+                        <!-- Arrow Down -->
+                        <div class="h-6 border-l-2 border-dashed border-gray-600 my-1"></div>
+                        
+                        <!-- Flow node 2 -->
+                        <div class="bg-gray-800 border border-gray-700 text-gray-300 px-6 py-3 rounded-lg w-full max-w-[240px] relative z-10">
+                            <span class="absolute -left-3 md:-left-12 top-1/2 -translate-y-1/2 text-gray-500 text-[9px] md:text-[10px] bg-[#050505] px-1 rounded">Instant</span>
+                            <i data-feather="tag" class="w-4 h-4 mx-auto mb-2 text-gray-400"></i>
+                            Assign Tag & Owner
+                        </div>
+
+                        <!-- Arrow Down -->
+                        <div class="h-6 border-l-2 border-dashed border-gray-600 my-1"></div>
+
+                        <!-- Flow node 3 -->
+                        <div class="bg-brand/20 border border-brand/50 text-red-300 px-6 py-3 rounded-lg w-full max-w-[240px] shadow-[0_0_15px_rgba(225,29,72,0.15)] relative z-10">
+                            <span class="absolute -left-3 md:-left-12 top-1/2 -translate-y-1/2 text-gray-500 text-[9px] md:text-[10px] bg-[#050505] px-1 rounded">+ 1 min</span>
+                            <i data-feather="message-circle" class="w-4 h-4 mx-auto mb-2 text-red-400"></i>
+                            Send 2-Way SMS
+                        </div>
+
+                        <!-- Arrow Down -->
+                        <div class="h-6 border-l-2 border-dashed border-gray-600 my-1"></div>
+
+                        <!-- Split Condition -->
+                        <div class="bg-gray-900 border border-gray-700 text-gray-400 px-4 py-2 rounded-full text-[10px] tracking-widest uppercase mb-2 relative z-10">
+                            If/Else: Replied?
+                        </div>
+
+                        <!-- Responsive Branching -->
+                        <div class="flex flex-col sm:flex-row w-full justify-center gap-4 sm:gap-8 mt-2 relative z-10">
+                            
+                            <!-- Yes Branch -->
+                            <div class="flex flex-col items-center">
+                                <div class="h-6 border-l-2 border-dashed border-emerald-900/50 sm:hidden my-1"></div>
+                                <div class="bg-emerald-900/20 border border-emerald-500/50 text-emerald-300 px-4 py-3 rounded-lg w-32 shadow-[0_0_10px_rgba(16,185,129,0.1)]">
+                                    <span class="block text-[9px] text-emerald-500 mb-1">YES</span>
+                                    <i data-feather="calendar" class="w-4 h-4 mx-auto mb-2 text-emerald-400"></i>
+                                    Send Calendar
+                                </div>
+                            </div>
+                            
+                            <!-- No Branch -->
+                            <div class="flex flex-col items-center">
+                                <div class="h-6 border-l-2 border-dashed border-gray-700 sm:hidden my-1"></div>
+                                <div class="bg-gray-800 border border-gray-700 text-gray-300 px-4 py-3 rounded-lg w-32">
+                                    <span class="block text-[9px] text-gray-500 mb-1">NO</span>
+                                    <i data-feather="mail" class="w-4 h-4 mx-auto mb-2 text-gray-400"></i>
+                                    Email Nurture
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </main>
+        <!-- INFINITE LOOP FOOTER -->
+    <a href="project-brand.html" class="block w-full py-32 bg-[#0a0a0a] border-t border-border group hover:bg-[#0f0f0f] transition duration-500 text-center relative z-20">
+        <p class="text-gray-500 font-medium tracking-widest uppercase text-sm mb-4 group-hover:text-brand transition">Keep the momentum going</p>
+        <h2 class="text-5xl md:text-7xl font-medium text-gray-300 group-hover:text-white transition flex items-center justify-center gap-6">
+            Next: Brand Identity Kits 
+            <i data-feather="arrow-right" class="w-12 h-12 text-brand group-hover:translate-x-4 transition duration-300"></i>
+        </h2>
+    </a>
+</body>
+
+</html>

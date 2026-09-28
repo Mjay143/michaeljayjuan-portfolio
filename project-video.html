@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production - Case Study</title>
+    <meta name="author" content="Michael Jay Juan">
+    <meta name="keywords" content="marketing operations, gohighlevel expert, automation specialist, video editing, funnel building, Michael Jay Juan, marketing agency">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#e11d48',
+                        dark: '#0a0a0a',
+                        card: '#121212',
+                        border: '#262626'
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #050505; color: white; font-family: system-ui, -apple-system, sans-serif; }
+        .glass-card { background: rgba(30, 33, 43, 0.4); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        :root { --ease-premium: cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s var(--ease-premium), transform 1s var(--ease-premium);
+            will-change: opacity, transform;
+        }
+        .reveal-on-scroll.is-revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+        /* AMBIENT ANIMATED BACKGROUND */
+        .ambient-orb { position: absolute; border-radius: 50%; filter: blur(120px); z-index: 0; pointer-events: none; opacity: 0.6; animation-duration: 20s; animation-iteration-count: infinite; animation-direction: alternate; animation-timing-function: ease-in-out; }
+        .orb-1 { width: 600px; height: 600px; background: rgba(225,29,72,0.15); top: -10%; right: -10%; animation-name: drift1; }
+        .orb-2 { width: 700px; height: 700px; background: rgba(159,18,57,0.12); bottom: -20%; left: -10%; animation-name: drift2; }
+        .orb-3 { width: 500px; height: 500px; background: rgba(225,29,72,0.1); top: 30%; left: 40%; animation-name: drift3; }
+        @keyframes drift1 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(-100px, 150px) scale(1.2); } }
+        @keyframes drift2 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(200px, -100px) scale(1.1); } }
+        @keyframes drift3 { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(-150px, -200px) scale(1.3); } }
+
+</style>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- SEO & OPEN GRAPH -->
+    <meta name="description" content="I turn chaos into high-converting marketing engines. From GoHighLevel automations to digital design, see how I help agencies scale.">
+    <meta property="og:title" content="Michael Jay Juan | Marketing Operations Specialist">
+    <meta property="og:description" content="I turn chaos into high-converting marketing engines. From GoHighLevel automations to digital design, see how I help agencies scale.">
+    <meta property="og:image" content="https://michaeljayjuan.com/my_logo.png">
+    <meta property="og:url" content="https://michaeljayjuan.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="my_logo.png">
+    <link rel="apple-touch-icon" href="my_logo.png">
+
+
+    <!-- AI SCHEMA MARKUP -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Jay Juan",
+    "jobTitle": "Marketing Operations Specialist",
+    "url": "https://michaeljayjuan.com",
+    "description": "Expert in GoHighLevel automations, funnel building, and digital marketing operations."
+}
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-97PHMZ331C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-97PHMZ331C');
+    </script>
+</head>
+<body class="antialiased min-h-screen relative overflow-x-hidden">
+
+    <!-- Animated Background -->
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+
+    
+    <!-- GLOBAL NAVIGATION -->
+    <nav class="fixed w-full top-0 z-50 bg-[#050505]/90 backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="rounded-xl p-[2px] bg-gradient-to-br from-red-500 via-rose-700 to-[#050505] shadow-[0_0_15px_rgba(225,29,72,0.5)] block hover:scale-105 transition">
+                    <img src="my_logo.png?v=3" alt="Michael Jay Logo" class="h-10 w-10 bg-[#050505] rounded-xl object-contain">
+                </a>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="index.html#home" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">Home</a>
+                <a href="index.html#about" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">About</a>
+                <a href="index.html#services" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">Services</a>
+                <a href="index.html#work" class="nav-link normal-case tracking-wide text-gray-400 hover:text-brand transition">Projects</a>
+            </div>
+            <a href="index.html#contact" class="hidden md:inline-flex items-center gap-2 bg-brand hover:bg-rose-700 text-white shadow-[0_0_15px_rgba(225,29,72,0.4)] hover:shadow-[0_0_25px_rgba(225,29,72,0.7)] px-5 py-2.5 text-sm font-medium uppercase tracking-wider rounded transition">
+                Book a Call <i data-feather="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 pt-32 pb-24 relative z-10">
+        
+        <!-- Hero Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32 reveal-on-scroll is-revealed">
+            <div>
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-[#0a0a0a] border border-gray-800 text-gray-300 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span> Video Editing
+                </div>
+                <h1 class="text-5xl md:text-6xl font-medium mb-6 tracking-tight leading-tight text-white">
+                    Engaging <br><span class="text-brand">Video Content.</span>
+                </h1>
+                <p class="text-gray-400 text-lg leading-relaxed max-w-lg font-medium">
+                    From highly-polished YouTube documentaries to fast-paced viral TikTok and Reels. Editing designed to maximize viewer retention and engagement metrics.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="glass-card p-6 rounded-2xl border border-gray-800">
+                    <i data-feather="youtube" class="text-brand w-6 h-6 mb-4"></i>
+                    <h3 class="font-medium text-white mb-1">Long-Form</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide">YouTube / VODs</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border border-gray-800">
+                    <i data-feather="smartphone" class="text-brand w-6 h-6 mb-4"></i>
+                    <h3 class="font-medium text-white mb-1">Short-Form</h3>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide">TikToks / Reels</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Long-Form Video Section -->
+        <div class="reveal-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-medium mb-4">Long-Form Video</h2>
+            <p class="text-gray-400 text-lg mb-12">Cinematic storytelling, professional color grading, and dynamic pacing for YouTube.</p>
+            
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Example Video 1 -->
+                <div class="bg-card rounded-2xl border border-border p-4 hover:border-brand/30 transition duration-500">
+                    <div class="aspect-video bg-black rounded-xl overflow-hidden mb-4 relative flex items-center justify-center group cursor-pointer">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0meLY88T-RU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute inset-0"></iframe>
+                    </div>
+                    <h3 class="text-xl font-medium text-white mb-1">Genetic Witness - Cold Case</h3>
+                    <p class="text-sm text-gray-500">True crime documentary editing with deep forensic research.</p>
+                </div>
+
+                <!-- Example Video 2 -->
+                <div class="bg-card rounded-2xl border border-border p-4 hover:border-brand/30 transition duration-500">
+                    <div class="aspect-video bg-black rounded-xl overflow-hidden mb-4 relative flex items-center justify-center group cursor-pointer">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ijrtcUh6d8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute inset-0"></iframe>
+                    </div>
+                    <h3 class="text-xl font-medium text-white mb-1">Claude AI Tutorial</h3>
+                    <p class="text-sm text-gray-500">Step-by-step AI workflow tutorial with dynamic screen recordings and pacing.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Short-Form Video Section -->
+        <div class="mt-32 pt-32 border-t border-border reveal-on-scroll">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-medium mb-4">Short-Form Video</h2>
+                    <p class="text-gray-500">Fast-paced, high-retention vertical videos optimized for TikTok, Reels, and Shorts.</p>
+                </div>
+                <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mt-2 md:mt-0 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Tap Reel to Play &bull; Audio Toggle
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+                <!-- Reel 1 -->
+                <div class="custom-video-card max-w-[340px] mx-auto sm:max-w-none w-full bg-card rounded-3xl border border-border hover:border-brand/40 p-4 transition-all duration-500 flex flex-col group hover:shadow-[0_10px_30px_rgba(225,29,72,0.15)]">
+                    <div style="aspect-ratio: 9/16;" class="video-container relative aspect-[9/16] bg-black rounded-2xl overflow-hidden mb-4 cursor-pointer select-none border border-white/5 shadow-inner">
+                        <video class="w-full h-full object-cover" playsinline preload="metadata" loop>
+                            <source src="reels/reel1.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute top-3 inset-x-0 flex justify-center pointer-events-none z-20">
+                            <div class="h-1 w-12 bg-white/20 rounded-full backdrop-blur-sm"></div>
+                        </div>
+                        <button type="button" class="audio-toggle absolute top-3 right-3 z-30 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white flex items-center justify-center hover:bg-brand transition">
+                            <i data-feather="volume-x" class="w-4 h-4"></i>
+                        </button>
+                        <div class="play-overlay absolute inset-0 z-20 bg-black/35 backdrop-blur-[2px] flex items-center justify-center transition-all duration-300 pointer-events-none">
+                            <div class="w-16 h-16 rounded-full bg-brand/90 text-white flex items-center justify-center shadow-[0_0_25px_rgba(225,29,72,0.6)] transform scale-100 group-hover:scale-110 transition duration-300">
+                                <i data-feather="play" class="w-7 h-7 fill-white translate-x-0.5"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 inset-x-0 h-1 bg-white/10 z-20 overflow-hidden">
+                            <div class="progress-bar h-full bg-brand w-0 transition-all duration-100"></div>
+                        </div>
+                    </div>
+                    <div class="px-1">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="text-lg font-medium text-white group-hover:text-brand transition">Financial Education Reel</h3>
+                            <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-gray-400">9:16 HD</span>
+                        </div>
+                        <p class="text-xs text-gray-500">High-retention editing & dynamic captions.</p>
+                    </div>
+                </div>
+
+                <!-- Reel 2 -->
+                <div class="custom-video-card max-w-[340px] mx-auto sm:max-w-none w-full bg-card rounded-3xl border border-border hover:border-brand/40 p-4 transition-all duration-500 flex flex-col group hover:shadow-[0_10px_30px_rgba(225,29,72,0.15)]">
+                    <div style="aspect-ratio: 9/16;" class="video-container relative aspect-[9/16] bg-black rounded-2xl overflow-hidden mb-4 cursor-pointer select-none border border-white/5 shadow-inner">
+                        <video class="w-full h-full object-cover" playsinline preload="metadata" loop>
+                            <source src="reels/reel2.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute top-3 inset-x-0 flex justify-center pointer-events-none z-20">
+                            <div class="h-1 w-12 bg-white/20 rounded-full backdrop-blur-sm"></div>
+                        </div>
+                        <button type="button" class="audio-toggle absolute top-3 right-3 z-30 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white flex items-center justify-center hover:bg-brand transition">
+                            <i data-feather="volume-x" class="w-4 h-4"></i>
+                        </button>
+                        <div class="play-overlay absolute inset-0 z-20 bg-black/35 backdrop-blur-[2px] flex items-center justify-center transition-all duration-300 pointer-events-none">
+                            <div class="w-16 h-16 rounded-full bg-brand/90 text-white flex items-center justify-center shadow-[0_0_25px_rgba(225,29,72,0.6)] transform scale-100 group-hover:scale-110 transition duration-300">
+                                <i data-feather="play" class="w-7 h-7 fill-white translate-x-0.5"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 inset-x-0 h-1 bg-white/10 z-20 overflow-hidden">
+                            <div class="progress-bar h-full bg-brand w-0 transition-all duration-100"></div>
+                        </div>
+                    </div>
+                    <div class="px-1">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="text-lg font-medium text-white group-hover:text-brand transition">Market Analysis Reel</h3>
+                            <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-gray-400">9:16 HD</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Fast pacing & visual overlays.</p>
+                    </div>
+                </div>
+
+                <!-- Reel 3 -->
+                <div class="custom-video-card max-w-[340px] mx-auto sm:max-w-none w-full bg-card rounded-3xl border border-border hover:border-brand/40 p-4 transition-all duration-500 flex flex-col group hover:shadow-[0_10px_30px_rgba(225,29,72,0.15)]">
+                    <div style="aspect-ratio: 9/16;" class="video-container relative aspect-[9/16] bg-black rounded-2xl overflow-hidden mb-4 cursor-pointer select-none border border-white/5 shadow-inner">
+                        <video class="w-full h-full object-cover" playsinline preload="metadata" loop>
+                            <source src="reels/reel3.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute top-3 inset-x-0 flex justify-center pointer-events-none z-20">
+                            <div class="h-1 w-12 bg-white/20 rounded-full backdrop-blur-sm"></div>
+                        </div>
+                        <button type="button" class="audio-toggle absolute top-3 right-3 z-30 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white flex items-center justify-center hover:bg-brand transition">
+                            <i data-feather="volume-x" class="w-4 h-4"></i>
+                        </button>
+                        <div class="play-overlay absolute inset-0 z-20 bg-black/35 backdrop-blur-[2px] flex items-center justify-center transition-all duration-300 pointer-events-none">
+                            <div class="w-16 h-16 rounded-full bg-brand/90 text-white flex items-center justify-center shadow-[0_0_25px_rgba(225,29,72,0.6)] transform scale-100 group-hover:scale-110 transition duration-300">
+                                <i data-feather="play" class="w-7 h-7 fill-white translate-x-0.5"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 inset-x-0 h-1 bg-white/10 z-20 overflow-hidden">
+                            <div class="progress-bar h-full bg-brand w-0 transition-all duration-100"></div>
+                        </div>
+                    </div>
+                    <div class="px-1">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="text-lg font-medium text-white group-hover:text-brand transition">Stock Market Short</h3>
+                            <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-gray-400">9:16 HD</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Engaging sound design & motion graphics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- TERMINAL CONVERSION FOOTER -->
+    <footer class="w-full py-32 bg-[#0a0a0a] border-t border-border text-center relative z-20 reveal-on-scroll">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-brand/10 border border-brand/20 text-brand rounded-full text-[11px] font-bold uppercase tracking-widest mb-6">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand animate-pulse"></span> Next Step
+            </div>
+            <h2 class="text-4xl md:text-6xl font-medium text-white mb-6 tracking-tight">
+                Ready to Streamline Your Marketing Operations?
+            </h2>
+            <p class="text-gray-400 text-base md:text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+                You've seen the work. Let's turn your chaotic pipelines into automated, high-converting growth engines.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="index.html#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand hover:bg-rose-700 text-white shadow-[0_0_20px_rgba(225,29,72,0.4)] hover:shadow-[0_0_30px_rgba(225,29,72,0.7)] px-8 py-4 text-sm font-medium uppercase tracking-wider rounded transition">
+                    Book a Strategy Call <i data-feather="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="index.html#work" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-transparent border border-gray-700 hover:border-brand text-gray-300 hover:text-white px-8 py-4 text-sm font-medium uppercase tracking-wider rounded transition">
+                    Back to All Projects <i data-feather="grid" class="w-4 h-4"></i>
+                </a>
+            </div>
+            <div class="mt-16 pt-8 border-t border-gray-900 text-gray-600 text-xs flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 Michael Jay Juan. All rights reserved.</p>
+                <a href="index.html#home" class="hover:text-brand transition flex items-center gap-1">
+                    Return to Top <i data-feather="arrow-up" class="w-3 h-3"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        feather.replace();
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0 };
+            const premiumObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => { premiumObserver.observe(el); });
+
+            // BESPOKE SEAMLESS HTML5 PLAYER CONTROLLER
+            const videoCards = document.querySelectorAll('.custom-video-card');
+            const ytIframes = document.querySelectorAll('iframe');
+
+            function pauseAllOtherVideos(currentVideo = null) {
+                videoCards.forEach(card => {
+                    const video = card.querySelector('video');
+                    const overlay = card.querySelector('.play-overlay');
+                    if (video !== currentVideo && !video.paused) {
+                        video.pause();
+                        if (overlay) overlay.classList.remove('opacity-0', 'pointer-events-none');
+                    }
+                });
+            }
+
+            function stopAllYouTubeIframes() {
+                ytIframes.forEach(iframe => {
+                    iframe.contentWindow?.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+                });
+            }
+
+            videoCards.forEach(card => {
+                const container = card.querySelector('.video-container');
+                const video = card.querySelector('video');
+                const overlay = card.querySelector('.play-overlay');
+                const audioBtn = card.querySelector('.audio-toggle');
+                const progressBar = card.querySelector('.progress-bar');
+
+                video.muted = true;
+
+                container.addEventListener('click', (e) => {
+                    if (e.target.closest('.audio-toggle')) return;
+
+                    if (video.paused) {
+                        pauseAllOtherVideos(video);
+                        stopAllYouTubeIframes();
+                        video.play();
+                        overlay.classList.add('opacity-0', 'pointer-events-none');
+                    } else {
+                        video.pause();
+                        overlay.classList.remove('opacity-0', 'pointer-events-none');
+                    }
+                });
+
+                video.addEventListener('timeupdate', () => {
+                    if (video.duration) {
+                        const pct = (video.currentTime / video.duration) * 100;
+                        progressBar.style.width = `${pct}%`;
+                    }
+                });
+
+                video.addEventListener('ended', () => {
+                    overlay.classList.remove('opacity-0', 'pointer-events-none');
+                });
+
+                audioBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    video.muted = !video.muted;
+                    audioBtn.innerHTML = video.muted 
+                        ? '<i data-feather="volume-x" class="w-4 h-4"></i>' 
+                        : '<i data-feather="volume-2" class="w-4 h-4 text-brand"></i>';
+                    feather.replace();
+                });
+            });
+
+            window.addEventListener('blur', () => {
+                const activeEl = document.activeElement;
+                if (activeEl && activeEl.tagName === 'IFRAME') {
+                    pauseAllOtherVideos();
+                }
+            });
+        });
+    </script>
+
+
+
+
+</body>
+</html>

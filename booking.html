@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Strategy Call | Michael Jay Juan</title>
+    <meta name="author" content="Michael Jay Juan">
+    <meta name="keywords" content="marketing operations, gohighlevel expert, automation specialist, video editing, funnel building, Michael Jay Juan, marketing agency">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#e11d48',
+                        dark: '#050505',
+                        card: '#121212',
+                        border: '#262626'
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #050505; color: white; font-family: system-ui, -apple-system, sans-serif; }
+        .glass-card { background: rgba(30, 33, 43, 0.4); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .nav-link { color: #a3a3a3; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; text-transform: uppercase; letter-spacing: 0.05em; }
+        .nav-link:hover { color: white; }
+    </style>
+
+    <!-- SEO & OPEN GRAPH -->
+    <meta name="description" content="I turn chaos into high-converting marketing engines. From GoHighLevel automations to digital design, see how I help agencies scale.">
+    <meta property="og:title" content="Michael Jay Juan | Marketing Operations Specialist">
+    <meta property="og:description" content="I turn chaos into high-converting marketing engines. From GoHighLevel automations to digital design, see how I help agencies scale.">
+    <meta property="og:image" content="https://michaeljayjuan.com/my_logo.png">
+    <meta property="og:url" content="https://michaeljayjuan.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="my_logo.png">
+    <link rel="apple-touch-icon" href="my_logo.png">
+
+
+    <!-- AI SCHEMA MARKUP -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Jay Juan",
+    "jobTitle": "Marketing Operations Specialist",
+    "url": "https://michaeljayjuan.com",
+    "description": "Expert in GoHighLevel automations, funnel building, and digital marketing operations."
+}
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-97PHMZ331C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-97PHMZ331C');
+    </script>
+</head>
+<body class="antialiased min-h-screen flex flex-col relative overflow-x-hidden">
+
+    <!-- GLOBAL NAVIGATION -->
+    <nav class="fixed w-full top-0 z-50 bg-[#050505]/90 backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="rounded-xl p-[2px] bg-gradient-to-br from-red-500 via-rose-700 to-[#050505] shadow-[0_0_15px_rgba(225,29,72,0.5)] block hover:scale-105 transition">
+                    <img src="my_logo.png?v=3" alt="Michael Jay Logo" class="h-10 w-10 bg-[#050505] rounded-xl object-contain">
+                </a>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#work" class="nav-link">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CALENDAR EMBED WRAPPER -->
+    <main class="flex-grow flex flex-col items-center justify-center pt-32 pb-24 px-6 relative z-10 w-full max-w-5xl mx-auto">
+        <div class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-medium mb-4">Choose a Time</h1>
+            <p class="text-gray-400 text-lg">Select a time below for our 30-minute strategy session.</p>
+        </div>
+        
+        <div class="w-full bg-[#121212] border border-border rounded-2xl shadow-2xl overflow-hidden p-2 md:p-6">
+            <iframe src="https://api.leadconnectorhq.com/widget/booking/06gC4VFAEWgQQ4p3cJOK" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="06gC4VFAEWgQQ4p3cJOK"></iframe>
+            <script src="https://api.leadconnectorhq.com/js/form_embed.js" type="text/javascript"></script>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-10 border-t border-border bg-[#050505] text-center w-full mt-auto">
+        <p class="text-gray-500 text-sm">&copy; 2026 Michael Jay Juan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
